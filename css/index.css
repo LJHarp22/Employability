@@ -1,0 +1,41 @@
+#user_Selection, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+#page_Content {
+    display: flex;
+    flex-direction: column;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+#user_Greeting {
+    display: flex;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.heading {
+    display: flex;
+    margin: auto;
+    font-size: 2.2em;
+    font-weight: 200;
+}
+
+#user_Selection {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.btn-one {
+    margin-top: 20px;
+}
+
