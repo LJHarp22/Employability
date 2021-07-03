@@ -24,8 +24,26 @@ Version: 0.1
             <!--Buttons for Account Creation-->
             <div id="user_Selection">
                 <div id="user_Options">
-                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="newClient()">New Client</button>
-                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="oldClient()">Existing Client</button>
+                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="newClient()">Register</button>
+                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="oldClient()">Existing User</button>
+                </div>
+                <div id="user_New" style="display: none;">
+                    <label for="new_Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="new_Email">
+                    <label for="new_Pass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="new_Pass">
+                    <label for="confirm_Pass" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm_Pass">
+                    <p id="new_Response" style="display: none;"></p>
+                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="">Submit</button>
+                </div>
+                <div id="user_Old" style="display: none;">
+                    <label for="user_Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="user_Email">
+                    <label for="user_Pass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="user_Pass">
+                    <p id="old_Response" style="display: none;"></p>
+                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="">Submit</button>
                 </div>
             </div>
         </div>

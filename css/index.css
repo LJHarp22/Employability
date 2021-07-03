@@ -39,3 +39,8 @@ body {
     margin-top: 20px;
 }
 
+#user_Old, #user_New {
+    display: flex;
+    flex-direction: column;
+}
+
