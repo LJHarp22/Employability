@@ -21,7 +21,7 @@ const connection = mysql.createConnection ({
 connection.connect();*/
 app.use(cors());
 
-app.get('',function(req, res) {
+app.get('/accounts',function(req, res) {
 
 });
 
