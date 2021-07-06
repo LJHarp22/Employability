@@ -10,40 +10,40 @@ Version: 0.1
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scale to device, Responsive design--> 
         <!--CSS Stylesheets-->
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
         <!--Div for wrapping page contents-->
         <div id="page_Content">
             <!--Webpage Heading-->
             <div id="user_Greeting">
-                <p class="heading">Welcome to The Customer Portal</p>
+                <p class="heading">WELCOME TO THE MATRIX</p>
             </div>
 
             <!--Buttons for Account Creation-->
             <div id="user_Selection">
                 <div id="user_Options">
-                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="new_Client()">Register</button>
-                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="old_Client()">Existing User</button>
+                    <input class="option" type="submit" onclick="old_Client()" value="Login">
+                    <input class="option" type="submit" onclick="new_Client()" value="Register">
                 </div>
                 <div id="user_New" style="display: none;">
-                    <label for="new_Email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="new_Email">
-                    <label for="new_Pass" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="new_Pass">
-                    <label for="confirm_Pass" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirm_Pass">
+                    <label for="new_Email" >Email</label>
+                    <input type="email" id="new_Email">
+                    <label for="new_Pass" >Password</label>
+                    <input type="password" id="new_Pass">
+                    <label for="confirm_Pass">Confirm Password</label>
+                    <input type="password" id="confirm_Pass">
                     <p id="new_Response" style="display: none;"></p>
-                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="new_Account()">Submit</button>
+                    <input class="option option-btn2" type="submit" value ="Submit" onclick="new_Account()">
                 </div>
                 <div id="user_Old" style="display: none;">
-                    <label for="user_Email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="user_Email">
-                    <label for="user_Pass" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="user_Pass">
+                    <label for="user_Email">Email</label>
+                    <input type="email" id="user_Email">
+                    <label for="user_Pass" >Password</label>
+                    <input type="password" id="user_Pass">
                     <p id="old_Response" style="display: none;"></p>
-                    <button class="w-100 btn btn-primary btn-lg btn-one" type="submit" onclick="login()">Submit</button>
+                    <input class="option option-btn2" type="submit" value="Submit" onclick="login()">
                 </div>
             </div>
         </div>
