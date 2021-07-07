@@ -9,14 +9,12 @@ function new_Client() {
 function login() {
         var user_Account = new User(document.getElementById("user_Email").value,
                                     document.getElementById("user_Pass").value);
-        //console.log(user_Account.email, user_Account.password);
         $.get({
-            url : "http://127.0.0.1:3000/accounts",
+            url : "http://127.0.0.1:3000/account",
             data : {
                 email       : user_Account.email,
                 password    : user_Account.password
             },
-            //dataType : "json",
             success : function (response) {
 
             }
