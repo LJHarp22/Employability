@@ -1,0 +1,54 @@
+<!-- Author: Luke Harper
+Date: 02.07.2021
+Version: 0.1
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Page Attribute, Describes page format-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scale to device, Responsive design--> 
+        <!--CSS Stylesheets-->
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <!--Div for wrapping page contents-->
+        <div id="page_Content">
+            <!--Webpage Heading-->
+            <div id="user_Greeting">
+                <p class="heading">WELCOME TO THE MATRIX</p>
+            </div>
+
+            <!--Buttons for Account Creation-->
+            <div id="user_Selection">
+                <div id="user_Options">
+                    <input class="option" type="submit" onclick="old_Client()" value="Login">
+                    <input class="option" type="submit" onclick="new_Client()" value="Register">
+                </div>
+                <div id="user_New" style="display: none;">
+                    <label for="new_Email" >Email</label>
+                    <input type="email" id="new_Email">
+                    <label for="new_Pass" >Password</label>
+                    <input type="password" id="new_Pass">
+                    <label for="confirm_Pass">Confirm Password</label>
+                    <input type="password" id="confirm_Pass">
+                    <p id="new_Response" style="display: none;"></p>
+                    <input class="option option-btn2" type="submit" value ="Submit" onclick="new_Account()">
+                </div>
+                <div id="user_Old" style="display: none;">
+                    <label for="user_Email">Email</label>
+                    <input type="email" id="user_Email">
+                    <label for="user_Pass" >Password</label>
+                    <input type="password" id="user_Pass">
+                    <p id="old_Response" style="display: none;"></p>
+                    <input class="option option-btn2" type="submit" value="Submit" onclick="login()">
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="app/app.js"></script>
+    </body>
+</html>

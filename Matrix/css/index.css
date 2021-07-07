@@ -1,0 +1,102 @@
+#user_Selection, body, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(25,25,25);
+}
+
+#page_Content {
+    display: flex;
+    flex-direction: column;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+#user_Greeting {
+    display: flex;
+    width: 1020px;
+    margin: 0 auto;
+}
+
+/*Issue with custom font loading. Flickers on load. Needs bug Raised.*/
+.heading {
+    margin: auto;
+    margin-top: 20px;
+    font-size: 3em;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: rgb(0, 255, 0);
+}
+
+#user_Selection {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#user_Options, #user_New, #user_Old {
+    border: 3px solid rgb(175, 175, 175);
+    border-radius: 10px;
+    height: 260px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgb(245,245,245);
+}
+
+#user_New {
+    height: 340px;
+}
+
+.option {
+    background: #2F558E;
+    box-shadow: 0 3px 0 0 #1D3C6A;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 2em;
+    line-height: 1.6em;
+    outline: none;
+    margin: 55px auto;
+    text-shadow: 0 1px #68B25B;
+    width: 70%;
+    height: 50px;
+}
+
+input[type="email"],
+input[type="password"] {
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  font-size: 1em;
+  padding: .3em .3em;
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto;
+  height: 20px;
+}
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background: #fff
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin: 20px 0 10px 55px;
+    color: #333;
+}
+
+#user_Old, #user_New {
+    display: flex;
+    flex-direction: column;
+}
+
+.option-btn2 {
+    margin-top: 25px;
+}
