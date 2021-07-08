@@ -41,12 +41,10 @@ header {
 .main-nav {
 	margin:  40px 10% 0px 10%;
 	display: inline-block;
-	float: right;
 }
 
 .main-nav li {
 	display: inline-block;
-	float: left;
 	margin: 0px 10px;
 }
 
@@ -70,7 +68,6 @@ C O N T A I N E R
 
 .profile img {
 	display: inline-block;
-	float: left;
 	margin: 0px 2.5%;
 	height: 200px;
 	width: 200px;
@@ -79,7 +76,6 @@ C O N T A I N E R
 .profile-info {
 	padding: 40px;
 	display: inline-block;
-	float: left;
 }
 
 /* * * * * *
@@ -118,12 +114,14 @@ M E D I A   Q U E R I E S
 @media (max-width: 910px) {
 
 	.main-header {
+		margin: 0 auto;
 		padding-top: 10px;
 		text-align: center;
 		float: none;
 	}
 
 	.main-nav {
+		margin: 0 auto;
 		margin-top: 20px;
 		text-align: center;
 		float: none;
@@ -133,6 +131,10 @@ M E D I A   Q U E R I E S
 	.main-nav li {
 		text-align: center;
 		float: none;
+	}
+
+	.main-nav ul {
+		padding-left: 0;
 	}
 }
 
