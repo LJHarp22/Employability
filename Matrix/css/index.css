@@ -100,3 +100,7 @@ label {
 .option-btn2 {
     margin-top: 25px;
 }
+
+#new_Response, #old_Response {
+    margin: 5px auto 0px auto;
+}
