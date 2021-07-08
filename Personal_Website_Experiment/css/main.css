@@ -1,0 +1,161 @@
+/* Boxing model, automatically scales with dimensions */
+* {
+	box-sizing: border-box;
+}
+
+/* Viewport 100% of device-width */
+body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background: rgb(230, 255, 230);
+}
+
+
+/* Sticky footer -> Pushes footer to bottom of the page*/
+.wrap {
+	min-height: calc(100vh - 88px);
+}
+
+/* * * * * *
+H E A D E R
+* * * * * */
+header {
+	background-color: #609960;
+	text-align: center;
+	margin-bottom: 40px;
+	border-bottom: 4px solid #407040;
+}
+
+.main-header {
+	display: block;
+	float: left;
+	margin-left: 2.5%;
+	font-family: 'Changa One', sans-serif;
+	font-size: 1.2em;
+	color: white;
+	letter-spacing: .5em;
+	line-height: 15px;
+}
+
+.main-nav {
+	margin:  40px 10% 0px 10%;
+	display: inline-block;
+	float: right;
+}
+
+.main-nav li {
+	display: inline-block;
+	float: left;
+	margin: 0px 10px;
+}
+
+.main-nav li a {
+	color: #205020;
+	font-family: 'Changa One', sans-serif;
+	font-size: 1.5em;
+}
+.main-nav li a.selected {
+	color: rgb(200, 230, 200);
+}
+
+/* * * * * * * * *
+C O N T A I N E R
+* * * * * * * * */
+
+.container {
+	width: 95%;
+	margin: 0px auto;
+}
+
+.profile img {
+	display: inline-block;
+	float: left;
+	margin: 0px 2.5%;
+	height: 200px;
+	width: 200px;
+}
+
+.profile-info {
+	padding: 40px;
+	display: inline-block;
+	float: left;
+}
+
+/* * * * * *
+F O O T E R
+* * * * * */
+.main-footer {
+	text-align: center;
+	padding: 8px;
+	color: #9e9090;
+	border-top: 4px solid #909090;
+	font-size: 14px;
+	height: 80px;
+	background: #fff;
+}
+/* Resize the dimensions of the profile images */
+.profile-media {
+	margin: 0px 5px;
+	height: 30px;
+	width: 30px;
+}
+/* Resize the dimensions of the git image, as it's slightly smaller looking */
+.git {
+	height: 31px;
+	height: 31px;
+}
+
+/* * * * * * * * * * * * *
+M E D I A   Q U E R I E S
+* * * * * * * * * * * * */
+@media (max-width: 1230px) {
+	.main-header {
+		margin-left: 2%;
+	}
+}
+
+@media (max-width: 910px) {
+
+	.main-header {
+		padding-top: 10px;
+		text-align: center;
+		float: none;
+	}
+
+	.main-nav {
+		margin-top: 20px;
+		text-align: center;
+		float: none;
+		padding-bottom: 20px;
+	}
+
+	.main-nav li {
+		text-align: center;
+		float: none;
+	}
+}
+
+@media (max-width: 520px) {
+	.main-nav {
+		padding-bottom: 5px;
+	}
+	.main-nav li {
+		display: block;
+		margin: 10px 0;
+	}
+}
+
+/* * * * * * * *
+C L E A R F I X
+* * * * * * * */
+
+/* Clears floated child elements */
+.clearfix::after {
+	content: "";
+	display: table;
+	/* clears both floats */
+	clear: both;
+}
+
+
