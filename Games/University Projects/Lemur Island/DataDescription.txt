@@ -1,0 +1,21 @@
+This file describes the text in the data file for the Lemur Island game
+=======================================================================
+
+The files contains the following data items in the order listed
+
+int Number of rows,
+int Number of columns,
+
+Island 2D terrain description:
+"Number of rows" rows with a string of length "Number of columns", each line terminated with ","
+"."=Sand, "*"=Forest, "^"=Mountain, "~"=Water
+
+Player details: 
+name [String], maximum stamina level [double], start position row [int], start position column [int], maximum backpack weight [double], maximum backpack size [double],
+
+int Number of occupants that follow
+Occupant type [String]: 
+"F": Food: name [string], description [string], position row [int], position column [int], weight [double], size [double], energy level [double],
+"T": Tool: name [string], description [string], position row [int], position column [int], weight [double], size [double],
+"A": Animal: name [string], description [string], position row [int], position column [int], danger [double],
+
